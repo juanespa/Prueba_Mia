@@ -10,7 +10,6 @@ namespace Prueba_Mia.Controllers
     public class ClienteController : Controller
     {
         private Cliente cliente = new Cliente();
-        private int algo;
         // GET: Cliente
         public ActionResult Index()
         {
