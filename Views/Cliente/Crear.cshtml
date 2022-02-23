@@ -1,0 +1,34 @@
+﻿@model Prueba_Mia.Models.Cliente
+@{
+    ViewBag.Title = "Crear";
+
+}
+
+<h2>Crear</h2>
+
+<div class="container">
+    @using (Html.BeginForm("Crear", "Cliente", FormMethod.Post))
+    {
+        @Html.TextBoxFor(x => x.Cedula, new { @class = "form-control", placeholder = "Cedula", autofocus = "autofocus" })
+        <br />
+        @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control", placeholder = "Nombre", autofocus = "autofocus" })
+        <br />
+        @Html.TextBoxFor(x => x.Apellido, new { @class = "form-control", placeholder = "Apellido", autofocus = "autofocus" })
+        <br />
+        @Html.TextBoxFor(x => x.Correo, new { @class = "form-control", placeholder = "Correo", autofocus = "autofocus" })
+        <br />
+        @Html.TextBoxFor(x => x.Direccion, new { @class = "form-control", placeholder = "Direccion", autofocus = "autofocus" })
+        <br />
+        @Html.TextBoxFor(x => x.Telefono, new { @class = "form-control", placeholder = "Telefono", autofocus = "autofocus" })
+        <br />
+        <button class="btn btn-primary" type="submit">
+            Enviar datos
+        </button>
+
+    }
+</div>
+
+
+
+
+
